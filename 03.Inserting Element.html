@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#btn1").click(function(){
+    $("p").append(" <b>new added text</b>.");
+  });
+
+  $("#btn2").click(function(){
+    $("ol").append("<li>new added item</li>");
+  });
+});
+</script>
+</head>
+<body>
+<pre style="background-color: yellow; font-size: 31px">
+four jQuery methods that are used to add new content:
+
+append() = Inserts content at the end of the selected elements
+prepend() = Inserts content at the beginning of the selected elements
+after() = Inserts content after the selected elements
+before() = Inserts content before the selected elements
+</pre>
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+
+<ol>
+  <li>List item 1</li>
+  <li>List item 2</li>
+  <li>List item 3</li>
+</ol>
+
+<button id="btn1">Append text</button>
+<button id="btn2">Append list items</button>
+
+</body>
+</html>
